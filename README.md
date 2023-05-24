@@ -1,6 +1,7 @@
 # SharkCoder
 
-SharkCoder is a quiz app with two mini-games designed to add some fun to your learning experience.
+SharkCoder is a quiz app with two mini-games designed to add some fun while you test your coding knowledge with a variety of
+questions from different programming topics.
 This app was developed in 24 hours by a team of four (me and three other colleages) during the final hackathon at our bootcamp
 of full-stack developers at Academia de Código.
 
