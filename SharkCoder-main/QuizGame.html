@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/css/style.css" />
+    <style>
+      body {
+        background-image: url("./js/img/background_quizz.png");
+        background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: relative;
+			height: 100vh;
+		}
+		
+		.water {
+			position: absolute;
+			bottom: 350px;
+			left: 0;
+			right: 0;
+			height: 50vh;
+			background-image: url("./js/img/water_element-02.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.5;
+		}
+
+		/* Add this CSS to position the button at the bottom center of the screen */
+		#restart-btn {
+			position: absolute;
+			bottom: 280px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		/* Add this CSS to display the "Game Over" message */
+		#game-over {
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 5em;
+			color: white;
+			display: none;
+		}
+	</style>
+  </head>
+  <body>
+<div class="water"></div>
+	    <button id="restart-btn">FLUSH</button>
+		<audio id=“audio” src= './sounds/toilet-flushing-7059.mp3'> </audio>
+
+
+    <div class="container">
+		<script>
+			var terror = new Audio("./sounds/terror.mp3")
+			terror.play();
+		</script>
+      
+      
+      <div id="quiz"></div>
+      <div id="score" class="text-right mt-4">Score: 0</div>
+    </div>
+    <div id="game-over">Game Over</div>
+
+	
+	    <script src="./js/script.js"></script>
+    <script type="module" src="./js/quizz/quizView.js"></script>
+
+    
+  </body>
+</html>
